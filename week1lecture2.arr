@@ -44,7 +44,7 @@ overlay(rectangle(80, 40, "solid", "white"), rectangle(83, 43,  "outline", "red"
 
 #above((first image), (second image))
 
-above(circle(15, "outline", "red"), triangle(30, "outline", "green"))
+above(rectangle(80, 40, "solid", "green"), rectangle(80, 40,  "solid", "purple"))
 
 #below((first image, (second image))
 
@@ -53,3 +53,11 @@ below(square(20, "solid", "red"), square(20, "outline", "blue"))
 #beside((first image, (Second image))
 
 beside(circle(30, "solid", "white"), circle(30, "outline", "white"))
+
+#class exercises
+
+#stop sign
+stopsign = overlay(text("STOP", 30, "white"), regular-polygon(40, 8, "solid", "red"))
+background = overlay(regular-polygon(42, 8, "solid", "white"), regular-polygon(44, 8, "outline", "black"))
+
+overlay(stopsign, background)
